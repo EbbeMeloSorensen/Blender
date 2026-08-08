@@ -68,7 +68,7 @@ Flyt 3D cursor med SHIFT+right click. Den afgør f.eks. hvor nye objekter placer
 
 SHIFT+S åbner "3D cursor menuen", som f.eks. kan bruges til at sende 3D cursoren tilbage til "world origin" (origo).
 
-Man kan selecte objekter ved at klikke på dem og evt bruge SHIFT og CTRL. Alternativt kan man bruge outline viewet til at selecte. Man kan i øvrigt selecte ved at dragge et vindue - både i viewport og i outline.
+Man kan selecte objekter ved at klikke på dem og evt bruge SHIFT for at udvide selection. Alternativt kan man bruge outline viewet til at selecte. Man kan i øvrigt selecte ved at dragge et vindue - både i viewport og i outline. Man kan tilsyneladende ikke bruge CTRL+click til at fjerne objekter fra sin selection.
 
 Bemærk, at der også er et light i scenen, so også kan ses i outline viewet.
 
@@ -93,6 +93,29 @@ S-knappen er direkte shortcut til Scale (virker på den aktuelle selection af 3D
 R-knappen er direkte shortcut til Rotate (virker på den aktuelle selection af 3D objekter)
 
 G-knappen er direkte shortcut til "Grabbing og movement" (virker på den aktuelle selection af 3D objekter, og når man flytter rundt på selection, bibeholder 3D objekterne deres afstand til kameraet). Når man er i grab mode efter at have trykket på G-knappen, kan man f.eks trykke på X-knappen for at constraine movement til at være langs X-aksen. Hvis man derimod trykker SHIFT+X restrictes movement således at objektet låses til sin nuværende position på X-aksen men kan flyttes frit rundt i dets nuværende Y/Z-plan. Det samme gælder for tryk på Y, SHIFT+Y, Z og SHIFT+Z.
+
+For finjusteringer kan man åbne menuen til højre for det lille blå/røde/grønne koordinatsystem og justere koordinaterne for et det aktive objekt direkte. Hvis man vil sætte en koordinat, f.eks. Y-koordinaten til det samme for alle objekter i sin selection, kan man holde ALT nede, når man klikker på et felt. Når man så indtaster en koordinat og trykker enter, får alle objekter i selectionen sat koordinaten til den pågældende værdi. Menuen kan skjules ved at trække dens venstre kant ind til højre igen. Man kan også toggle, om den vises, ved at trykke på N-knappen.
+
+Shift+klik på et objekt tilføjer et objekt til ens selection, og det kan også bruges til at gøre et objekt til det aktive objekt.
+
+Når man roterer, kan man også *indtaste* rotationsvinklen i stedet for at dragge med musen. Man kan f.eks. selecte et objekt og så trykke R (rotate), X (omkring x-aksen) og "90" + enter for at dreje et objekt 90 grader omkring x-aksen.
+
+Undo: CTRL+Z
+
+Redo: CTRL+SHIFT+Z
+
+#### Viewport & Rendering
+
+Over det røde/grønne/blå koordinatsystem er der en horisontal toolbar, der styrer, hvordan scenen renderes. Som default er "Viewport shading" sat til "solid", men man kan skifte til f.eks. wireframe. For begge modes kan man slå "X-ray" mode til eller fra - det afgør, om objekterne bliver gennemsigtige, hvilket kan være hensigtsmæssigt, hvis de overlapper hinanden.
+Der er også et mode, der hedder "Material preview", der giver en flot belysning, og som i øvrigt afhænger af det "lys"-objekt, so
+
+
+
+
+
+
+
+
 
 
 
