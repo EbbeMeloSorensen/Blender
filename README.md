@@ -84,3 +84,4 @@ Tryk på knappen T for at toggle om "tools panel" er synligt.
 
 **Skaler** objekter med Scale knappen i tools panel. Den minder også om flyt og rotate og er meget intuitiv. Bemærk, at man ligesom med Rotate skal klikke ved siden af kontrollerne for at skalere hele 3D objektet frit.
 
+De er også en generel **Transform** knap i tools panelet, so sådan set bare er alle de foregående samlet i ét tool.
