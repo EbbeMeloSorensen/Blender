@@ -85,3 +85,14 @@ Tryk på knappen T for at toggle om "tools panel" er synligt.
 **Skaler** objekter med Scale knappen i tools panel. Den minder også om flyt og rotate og er meget intuitiv. Bemærk, at man ligesom med Rotate skal klikke ved siden af kontrollerne for at skalere hele 3D objektet frit.
 
 De er også en generel **Transform** knap i tools panelet, so sådan set bare er alle de foregående samlet i ét tool.
+
+SHIFT+Spacebar åbner tool menu.
+
+S-knappen er direkte shortcut til Scale (virker på den aktuelle selection af 3D objekter)
+
+R-knappen er direkte shortcut til Rotate (virker på den aktuelle selection af 3D objekter)
+
+G-knappen er direkte shortcut til "Grabbing og movement" (virker på den aktuelle selection af 3D objekter, og når man flytter rundt på selection, bibeholder 3D objekterne deres afstand til kameraet). Når man er i grab mode efter at have trykket på G-knappen, kan man f.eks trykke på X-knappen for at constraine movement til at være langs X-aksen. Hvis man derimod trykker SHIFT+X restrictes movement således at objektet låses til sin nuværende position på X-aksen men kan flyttes frit rundt i dets nuværende Y/Z-plan. Det samme gælder for tryk på Y, SHIFT+Y, Z og SHIFT+Z.
+
+
+
