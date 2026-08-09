@@ -107,11 +107,23 @@ Redo: CTRL+SHIFT+Z
 #### Viewport & Rendering
 
 Over det røde/grønne/blå koordinatsystem er der en horisontal toolbar, der styrer, hvordan scenen renderes. Som default er "Viewport shading" sat til "solid", men man kan skifte til f.eks. wireframe. For begge modes kan man slå "X-ray" mode til eller fra - det afgør, om objekterne bliver gennemsigtige, hvilket kan være hensigtsmæssigt, hvis de overlapper hinanden.
-Der er også et mode, der hedder "Material preview", der giver en flot belysning, og som i øvrigt afhænger af det "lys"-objekt, so
+Der er også et mode, der hedder "Material preview", der giver en flot belysning. Bemærk, at det pr default *ikke* afhænger af det "lys"-objekt, der pr default er med i scenen lige som kameraet. For at få lyseffekter med fra lys i scenen, skal man sætte viewport shading til "rendered" ved at trykke på knappen til højre for material previewknappen i toolbaren øverst til højre.
 
+Man kan skifte til et andet workspace kaldet "shading workspace" (fra default work spacet "layout") ved at trykke på "Layout" knappen i hovedmenuen. Bemærk, at der fremkommer 2 kugler i bunden. Den til højre repræsenterer et såkaldt HDRi, som står for High Dynamic Range image. HDRi vises også som den flerfarvede bagrund i viewport og giver en flot, ambient, realistisk belysning af scenen.
 
+Man kan konfigurere workspacet ved at trykke på elementet længst til venstre i toolbaren i viewet under viewporten (pr default er den sat til "Shader editor"). Workspacet består også af en "image editor" nederst til venstre (kan bruges til at putte tekstur på 3D objekter) og en "file browser" øverst til venstre (til at dragge filer ind i shader editor). Outline panelet og property panelet er stadig med i shading workspace, lige som de var i layout workspace.
 
+Bemærk, at HDRi'en pr default ikke er med, når man sætter viewport shading til rendered.
 
+Bemærk, at man kan gøre objekter usynlige ved at trykke på ikonerne til højre for dem i outline panelet øverst til højre. Øje-ikonet gør dem usunlige i viewporten, mens kamera-ikonet gør dem usynlige i det billede, som man kan generere under anvendelse af kameraets synsvinkel.
+
+Man kan ændre kameraets position ved at gå ind i kameraview (trykke 0 på numpadden) og så trykke på lås-ikonet tæt på hånden. Når man så manøvrerer rundt i viewporten, som man normalt gør, følger kameraet med.
+
+Man kan generere et renderet billede ved at klikke på Render-knappen til venstre i hovedmenuen. Så popper et vindue op med det renderede image, hvor man så f.eks. kan trykke save image. Det renderede billede er som regel lidt pænere end hvad man ser i viewporten, fordi den beregner lyseffekter osv fuldt ud. Man kan styre, hvordan billedet renderes i viewporten ved f.eks. at skifte render engine fra "EEVEE" til "cycles" (som er en ray tracing engine) i properties panelet. Man kan også konfigurere, om den skal bruge CPU'en eller GPU'en til at rendere i viewporten. Generelt er det hurtigst at bruge GPU'en.
+
+#### Material Colours
+
+..
 
 
 
