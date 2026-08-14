@@ -123,7 +123,31 @@ Man kan generere et renderet billede ved at klikke på Render-knappen til venstr
 
 #### Material Colours
 
-..
+Skift til "Shading" workspacet, og sikr, at du har sat viewport shading til "rendered". Klik på et 3D objekt i viewporten og klik så på den grå "New"-knap i Shader editor panelet under viewporten for at lave et nyt material til objektet. Bemærk, at kuben, som var der fra starten, allerede har et material. Man panorerer og zoomer i shader editoren på samme måde som i viewporten, dvs zoom med musens rulle hjul og panorer med click og drag med rullehjulet. Klik på "base color" feltet og vælg en farve i color dialogen. Nye materials tildeles et navn, som man kan ændre arbitrært. Et material kan genbruges, så i stedet for at lave et nyt material til et objekt kan man også klikke på et objekt og tildele det et *eksisterende* material ved at klikke på den grå drop down knap til venstre for New-knappen.
+
+Man kan bruge Render Engine: EEVEE sammen med Ray tracing for at gøre det lidt pænere, men der er stadig ikke lige så pænt som at sætte Render Enginge til Cycles.
+
+#### Material Reflections
+
+Udover farve kan man for et material sætte egenskaberne: Metallic, Roughness, IOR og Alpha. Man kan også klikke på et objekt og vælge "Object" i viewportens toolbar, hvor man så kan vælge shade smooth for at justere, hvordan materialet ser ud for det pågældende objekt. Det påvirker så kun det ene objekt. Shade smooth virker ikke så godt på objekter med en skarp kant såsom en cylinder, men så kan man bruge Shade autosmooth i stedet. Man kan i øvrigt højreklikke på objekterne for at få menuen frem som en context menu.
+
+Man kan gå til et site, der hedder "Poly Haven" for at hente en HDRi til sin scene for at lave en flot lyseffekt (det gik jeg lidt hurtigt henover). Han demonstrerer også, hvordan man kan tweeke sin rendering, så man kan trade kvalitet for processeringstid.
+
+#### Lighting
+
+Han viser, hvordan man kan ændre egenskaberne for sine lysobjekter for at ændre beslysning i sin side. Pr default er et lys et point light, men man kan skifte til sun, spot eller area og justere styrke, farve osv.
+
+Man kan i øvrigt trykke SHIFT+D for at duplikere et objekt.
+
+#### Editing objects
+
+Skift fra "Object mode" til "Edit mode" ved at klikke i venstre side af viewportens toolbar. Edit mode er pr. default "vertex mode", hvor man kan flytte rundt på en selection af vertices med den sædvanlig metode, hvor man trykker på G og dragger rundt. Man kan også skifte til "Edge mode" eller "Facet mode". Det minder meget om at flytte, rotere eller skalere et helt objekt - her gør man det bare med en selection af vertices, edges eller facets. Man kan skifte mellem de 3 modes ved at trykke på tasterne 1, 2 og 3. På denne måde ændrer man ikke på antallet af vertices, edges og facets, men det kan man gøre ved f.eks. at gå i facet mode, vælge en facet og så trykker på tasten "E" og så dragge. Der er også et "Loop cut" tool med shortcut CTRL+R, som kan bruges til at lave et "snit" gennem figuren for at lave flere facets uden at ændre objektet.
+
+Tryk i øvrigt på "T"-tasten toggler, om toolbaren er synlig.
+
+#### Simple Houses
+
+
 
 
 
