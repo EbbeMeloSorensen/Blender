@@ -1,4 +1,4 @@
-## Udemy Course: ""
+## Udemy Course: "Complete Blender Creator: 3D Modelling"
 
 Instructor: Grant Abbit
 
@@ -12,13 +12,13 @@ Et begynderkursus for Blender, som er et tool til at lave 3D modeller.
 
 [TOC]
 
-### Section 1: Introduction & Setup
+## Section 1: Introduction & Setup
 
-#### Community & Support
+### Community & Support
 
 Der er et community ved navn GameDev.tv, som f.eks. kan tilgås på Discord og Facebook
 
-#### Navigation
+### Navigation
 
 ***Øv dig gerne i det her jævnligt, så du får det ind på muskelhukommelsen.***
 
@@ -58,7 +58,7 @@ Vælg noget ved at klikke på det - så får det en orange kant.
 
 Hvis man klikker på *kamera*-ikonet ved siden af hånd-ikonet, toggler man til det view, som kameraet har. Det bruges til at rendere "the final image", hvilket er nyttigt til at publicere sit værk. Man kan gøre det samme ved at trykke 0 på numpadden.
 
-#### Adding Objects
+### Adding Objects
 
 Klik på add i viewportens menu og vælg Mesh -> Plane. Så laves en plade med centrum i 3D cursoren  ("redningskransen").
 
@@ -104,7 +104,7 @@ Undo: CTRL+Z
 
 Redo: CTRL+SHIFT+Z
 
-#### Viewport & Rendering
+### Viewport & Rendering
 
 Over det røde/grønne/blå koordinatsystem er der en horisontal toolbar, der styrer, hvordan scenen renderes. Som default er "Viewport shading" sat til "solid", men man kan skifte til f.eks. wireframe. For begge modes kan man slå "X-ray" mode til eller fra - det afgør, om objekterne bliver gennemsigtige, hvilket kan være hensigtsmæssigt, hvis de overlapper hinanden.
 Der er også et mode, der hedder "Material preview", der giver en flot belysning. Bemærk, at det pr default *ikke* afhænger af det "lys"-objekt, der pr default er med i scenen lige som kameraet. For at få lyseffekter med fra lys i scenen, skal man sætte viewport shading til "rendered" ved at trykke på knappen til højre for material previewknappen i toolbaren øverst til højre.
@@ -121,31 +121,31 @@ Man kan ændre kameraets position ved at gå ind i kameraview (trykke 0 på nump
 
 Man kan generere et renderet billede ved at klikke på Render-knappen til venstre i hovedmenuen. Så popper et vindue op med det renderede image, hvor man så f.eks. kan trykke save image. Det renderede billede er som regel lidt pænere end hvad man ser i viewporten, fordi den beregner lyseffekter osv fuldt ud. Man kan styre, hvordan billedet renderes i viewporten ved f.eks. at skifte render engine fra "EEVEE" til "cycles" (som er en ray tracing engine) i properties panelet. Man kan også konfigurere, om den skal bruge CPU'en eller GPU'en til at rendere i viewporten. Generelt er det hurtigst at bruge GPU'en.
 
-#### Material Colours
+### Material Colours
 
 Skift til "Shading" workspacet, og sikr, at du har sat viewport shading til "rendered". Klik på et 3D objekt i viewporten og klik så på den grå "New"-knap i Shader editor panelet under viewporten for at lave et nyt material til objektet. Bemærk, at kuben, som var der fra starten, allerede har et material. Man panorerer og zoomer i shader editoren på samme måde som i viewporten, dvs zoom med musens rulle hjul og panorer med click og drag med rullehjulet. Klik på "base color" feltet og vælg en farve i color dialogen. Nye materials tildeles et navn, som man kan ændre arbitrært. Et material kan genbruges, så i stedet for at lave et nyt material til et objekt kan man også klikke på et objekt og tildele det et *eksisterende* material ved at klikke på den grå drop down knap til venstre for New-knappen.
 
 Man kan bruge Render Engine: EEVEE sammen med Ray tracing for at gøre det lidt pænere, men der er stadig ikke lige så pænt som at sætte Render Enginge til Cycles.
 
-#### Material Reflections
+### Material Reflections
 
 Udover farve kan man for et material sætte egenskaberne: Metallic, Roughness, IOR og Alpha. Man kan også klikke på et objekt og vælge "Object" i viewportens toolbar, hvor man så kan vælge shade smooth for at justere, hvordan materialet ser ud for det pågældende objekt. Det påvirker så kun det ene objekt. Shade smooth virker ikke så godt på objekter med en skarp kant såsom en cylinder, men så kan man bruge Shade autosmooth i stedet. Man kan i øvrigt højreklikke på objekterne for at få menuen frem som en context menu.
 
 Man kan gå til et site, der hedder "Poly Haven" for at hente en HDRi til sin scene for at lave en flot lyseffekt (det gik jeg lidt hurtigt henover). Han demonstrerer også, hvordan man kan tweeke sin rendering, så man kan trade kvalitet for processeringstid.
 
-#### Lighting
+### Lighting
 
 Han viser, hvordan man kan ændre egenskaberne for sine lysobjekter for at ændre beslysning i sin side. Pr default er et lys et point light, men man kan skifte til sun, spot eller area og justere styrke, farve osv.
 
 Man kan i øvrigt trykke SHIFT+D for at duplikere et objekt.
 
-#### Editing objects
+### Editing objects
 
 Skift fra "Object mode" til "Edit mode" ved at klikke i venstre side af viewportens toolbar. Edit mode er pr. default "vertex mode", hvor man kan flytte rundt på en selection af vertices med den sædvanlig metode, hvor man trykker på G og dragger rundt. Man kan også skifte til "Edge mode" eller "Facet mode". Det minder meget om at flytte, rotere eller skalere et helt objekt - her gør man det bare med en selection af vertices, edges eller facets. Man kan skifte mellem de 3 modes ved at trykke på tasterne 1, 2 og 3. På denne måde ændrer man ikke på antallet af vertices, edges og facets, men det kan man gøre ved f.eks. at gå i facet mode, vælge en facet og så trykker på tasten "E" og så dragge. Der er også et "Loop cut" tool med shortcut CTRL+R, som kan bruges til at lave et "snit" gennem figuren for at lave flere facets uden at ændre objektet.
 
 Tryk i øvrigt på "T"-tasten toggler, om toolbaren er synlig.
 
-#### Simple Houses
+### Simple Houses
 
 Små øvelser i at lave simple figurer.
 
@@ -153,7 +153,7 @@ Tryg TAB for at skifte mellem Object Mode og Edit Mode. Generelt tager TAB en he
 
 Bemærk, at hvis man tilføjer et nyt mesh i Edit mode, bliver det en del af det aktive objekt. Hvis man kommer til at gøre det ved en fejl, kan man gå ind i Edit mode, klikke P og vælge "Separate, by loose parts" for at skille meshes ad.
 
-#### Making a Lighthouse
+### Making a Lighthouse
 
 Man kan ændre navne på sine objekter i "Outline" panelet eller ved at trykke F2 efter at have valgt et objekt i viewporten.
 
@@ -175,7 +175,7 @@ Når man skalerer noget, kan man intaste skala, f.eks. 0, hvis noget skal kollap
 
 Han viser en smart måde at selecte mange polygoner på én gang, hvor man holder ALT nede og klikker på en edge. Så selecter den alle de *facets*, der "hænger sammen" omkring den selectede edge. Det kan man f.eks. bruge til at justere sin figur.
 
-#### Making the Rocky Base
+### Making the Rocky Base
 
 Denne lektion handler om **sculpting**. Lav en plane og rumlig figur såsom en icosphere, og aktiver "Sculpting" workspace. Her har man et antal "brush" tools til at deformere objekter. Bemærk, at sculpt kun virker på det *aktive* objekt og altså ikke på andre selectede objekter (mørkeorange omrids).
 
@@ -189,11 +189,19 @@ Man kan dragge den nederste toolbar med brushes op for at se alle de mange brush
 
 Han demonstrerer "Grab brush", der trækker/skubber vertices.
 
-#### The Decimate Modifier
+### The Decimate Modifier
 
 Det er en metode til at reducere antallet af facets. Skift til Layout workspace, vælg et objekt, klik på wrench ikonet i properties panelet, klik på Add modifier-knappen og frag så i "Ratio"-slideren (som ligner en knap). Bemærk, at modifieren forbliver en egenskab ved objektet, så man f.eks. kan gå tilbage mod flere facets, hvis man vil. Man kan også skjule modifierens effekt ved at klikke på skærm-ikonet til højre for den valgte modifier i properties panelet. Man kan også stakke flere modifiers oven på hinanden. Bemærk, at man ikke kan ændre på modifierens output med f.eks. sculpt toolet. Hvis man vil gøre det, skal man "applye" sine modifers ved at klikke på drop down pilen til højre for den valgte modifier i property panelet. Så er der til gengæld ikke nogen vej tilbage til det originale mesh. Det er derfor som regel noget man gør i forbindelse med at færdiggøre sin model.
 
 Så demonstrerer han "Proportionate Editing" tool, som man kan aktivere ved at klikke på en knap i midten af toolbaren over viewporten i Edit mode (eller med shortcut O). Den ændrer adfærden af grab (G) og move af vertices, edges eller facets, så det f.eks. ikke kun er *individuelle* vertices, der påvirkes, men også dem i nærheden - afhængigt af, hvilken indstilling, man har valgt for Proportionate Editing (smooth, linear, osv). Man kan også ændre radius på "circle of influence", ved at bruge musens rullehjul.
 
-#### Snapping
+### Snapping
 
+## Tips, jeg selv har fundet ud af, bl.a. med hjælp fra ChatGpt
+
+### Flytte Origin for et objekt
+
+Origin er en lille orange dot, der knytter sig hvert 3D objekt og afgør, hvordan den skaleres osv. Det kan være nødvendigt at flytte den, hvilket f.eks. kan gøres ved at højreklikke på det aktive objekt i Layout workspace og så vælge "Set Origin" og så vælge blandt mulighederne der.
+
+### Eksportere udvalgte objekter til stl
+Klik på kamera-ikonet ud for de objekter i Outline panelet øverst til højre, for at styre, hvilke der skal med i output. Det er helt ækvivalent til, hvordan man styrer, om de skal med i et renderet billede.
