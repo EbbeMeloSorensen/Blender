@@ -203,5 +203,9 @@ Så demonstrerer han "Proportionate Editing" tool, som man kan aktivere ved at k
 
 Origin er en lille orange dot, der knytter sig hvert 3D objekt og afgør, hvordan den skaleres osv. Det kan være nødvendigt at flytte den, hvilket f.eks. kan gøres ved at højreklikke på det aktive objekt i Layout workspace og så vælge "Set Origin" og så vælge blandt mulighederne der.
 
+### Joine et antal objekter
+
+Hvis man f.eks. har lavet en bil ved at lave en kube og 4 torusser, så kan man lave det om til ét objekt ved at selecte alle objekter, højreklikke og vælge Join. Bemærk at Origin fra det *aktive* objekt bruges som origin for det nye joinede objekt.
+
 ### Eksportere udvalgte objekter til stl
 Klik på kamera-ikonet ud for de objekter i Outline panelet øverst til højre, for at styre, hvilke der skal med i output. Det er helt ækvivalent til, hvordan man styrer, om de skal med i et renderet billede.
