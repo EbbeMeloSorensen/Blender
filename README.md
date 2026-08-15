@@ -147,11 +147,53 @@ Tryk i øvrigt på "T"-tasten toggler, om toolbaren er synlig.
 
 #### Simple Houses
 
+Små øvelser i at lave simple figurer.
 
+Tryg TAB for at skifte mellem Object Mode og Edit Mode. Generelt tager TAB en hen til det forrige mode.
 
+Bemærk, at hvis man tilføjer et nyt mesh i Edit mode, bliver det en del af det aktive objekt. Hvis man kommer til at gøre det ved en fejl, kan man gå ind i Edit mode, klikke P og vælge "Separate, by loose parts" for at skille meshes ad.
 
+#### Making a Lighthouse
 
+Man kan ændre navne på sine objekter i "Outline" panelet eller ved at trykke F2 efter at have valgt et objekt i viewporten.
 
+Man kan skjule en masse objekter hurtigt ved at klikke og dragge på øje-ikonerne i Outline panelet.
 
+Man kan lave en collection ved at klikke på det lille ikon med et plus i øverste højre hjørne af "Outline"-panelet. Man kan også gøre det ved at trykke på M-tasten. Hvis man har valgt et antal objekter, bliver de en del af den nye collection.
 
+Man kan flytte objekter mellem collections som hvis det var filer i Explorer.
+
+Collections kan navngives og skjules lige som objekter.
+
+Bemærk, at når man tilføjer f.eks. en cylinder, popper der en lille "Add Cylinder"-dialog op i nederste venstre hjørne af viewporten. Her kan man ændre på antal facets osv. Han anbefaler i øvrigt at arbejde med så få facets som muligt og siger, at man let kan øge antallet af facets, mens det er sværere at gå den anden vej og reducere antallet af facets.
+
+Han viser en smart variant af det at extrude, hvor han går i Edit mode, vælger facet mode, selecter en facet og trykker E for at ekstrudere, men FØR han flytter musen trykker han så S for at skalere - i det her tilfælde for at gøre den lidt mindre.
+
+Han viser også det såkaldte "Inset" tool, som en en art sammensætning af extrude og scale, hvor man klikker på en polygon og trykker "I" for at lave en ny, hænger sammen med den selectede, men som er mindre.
+
+Når man skalerer noget, kan man intaste skala, f.eks. 0, hvis noget skal kollapses helt. Det demonstrerer han med toppen af fyrtårnet.
+
+Han viser en smart måde at selecte mange polygoner på én gang, hvor man holder ALT nede og klikker på en edge. Så selecter den alle de *facets*, der "hænger sammen" omkring den selectede edge. Det kan man f.eks. bruge til at justere sin figur.
+
+#### Making the Rocky Base
+
+Denne lektion handler om **sculpting**. Lav en plane og rumlig figur såsom en icosphere, og aktiver "Sculpting" workspace. Her har man et antal "brush" tools til at deformere objekter. Bemærk, at sculpt kun virker på det *aktive* objekt og altså ikke på andre selectede objekter (mørkeorange omrids).
+
+Pr default er "Draw" brush toolet aktivt - det "bygger" på meshet. Tryk på F for at ændre brush size og SHIFT+F for at ændre brush strength. Man bruger den ved at klikke og dragge rundt på sit objekt - toolet trækker så facets *udad*, der hvor den er. Bemærk, at der ikke ændres på antallet af facets - det kan man til gengæld gøre med "DynTopo" eller "Remesh", som er i højre side af toolbaren over viewporten i Sculpt workspacet. Bemærk, at DynTopo er en checkbox. Det minder om det simple sculpting tool, men tilføjer facets, så ens objekt bliver mere smooth. Man kan tune DynTopo toolet ved at klikke på drop down pilen. Så kan man f.eks. sætte detailing til constant (så den ikke afhænger af zoom level). Man kan også ændre "Resolution" til en anden værdi for at påvirke, hvor store nye meshes skal være.
+
+Holder man CTRL nede, *skubber* man til facets i stedet for at trække i dem.
+
+Holder man SHIFT nede, smoother man meshet med toolet, så facets i højere grad gøres ensartede i størrelse og får mindre vinkler mellem sig. Det virker uanset hvilken brush, der er aktiv.
+
+Man kan dragge den nederste toolbar med brushes op for at se alle de mange brushes, man kan bruge. De brushes, der har noget gult på deres knap, er kendetegnet ved at de ikke ændrer antallet af facets - så de er ikke påvirket af Dyntopo.
+
+Han demonstrerer "Grab brush", der trækker/skubber vertices.
+
+#### The Decimate Modifier
+
+Det er en metode til at reducere antallet af facets. Skift til Layout workspace, vælg et objekt, klik på wrench ikonet i properties panelet, klik på Add modifier-knappen og frag så i "Ratio"-slideren (som ligner en knap). Bemærk, at modifieren forbliver en egenskab ved objektet, så man f.eks. kan gå tilbage mod flere facets, hvis man vil. Man kan også skjule modifierens effekt ved at klikke på skærm-ikonet til højre for den valgte modifier i properties panelet. Man kan også stakke flere modifiers oven på hinanden. Bemærk, at man ikke kan ændre på modifierens output med f.eks. sculpt toolet. Hvis man vil gøre det, skal man "applye" sine modifers ved at klikke på drop down pilen til højre for den valgte modifier i property panelet. Så er der til gengæld ikke nogen vej tilbage til det originale mesh. Det er derfor som regel noget man gør i forbindelse med at færdiggøre sin model.
+
+Så demonstrerer han "Proportionate Editing" tool, som man kan aktivere ved at klikke på en knap i midten af toolbaren over viewporten i Edit mode (eller med shortcut O). Den ændrer adfærden af grab (G) og move af vertices, edges eller facets, så det f.eks. ikke kun er *individuelle* vertices, der påvirkes, men også dem i nærheden - afhængigt af, hvilken indstilling, man har valgt for Proportionate Editing (smooth, linear, osv). Man kan også ændre radius på "circle of influence", ved at bruge musens rullehjul.
+
+#### Snapping
 
